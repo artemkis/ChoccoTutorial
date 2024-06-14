@@ -1,0 +1,53 @@
+.menu {
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+
+  &--vertical {
+    @include tablets {
+      display: block;
+    }
+    font-size: rem(36px);
+    color: #fff;
+    text-align: center;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu__item {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.menu__item {
+  margin-right: rem(27px);
+  margin-bottom: rem(10px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

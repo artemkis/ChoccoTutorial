@@ -1,0 +1,7 @@
+css/main.css
+.vscode
+.sass-cache
+prepros-6.config
+.idea
+node_modules
+dist

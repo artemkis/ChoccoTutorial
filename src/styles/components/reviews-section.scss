@@ -1,0 +1,29 @@
+.reviews-section {
+  background: url("./images/decor/strawberry-cereal.png") right rem(20px) top rem(10px) no-repeat;
+  position: relative;
+  &:before {
+    content: url("./images/decor/side-round-leaf.png");
+    position: absolute;
+    bottom: rem(-162px);
+    left: 0;
+  }
+
+  &:after {
+    content: url("./images/decor/assorted-berries.png");
+    position: absolute;
+    bottom: rem(-90px);
+    left: 0;
+  }
+
+  @include phones {
+    background: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

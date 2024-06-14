@@ -1,0 +1,110 @@
+.reviews__display {
+  background: url("./images/decor/drown-berries.png") right top no-repeat #f8faf9;
+  padding: rem(50px) rem(45px) rem(35px);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(40px);
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: rem(-70px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+
+  }
+}
+
+.reviews {
+  position: relative;
+  min-height: rem(280px);
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  // transition: .3s;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.reviews__display-inner {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(260px);
+  margin-right: rem(20px);
+
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    width: rem(124px);
+    height: rem(154px);
+  }
+}
+
+.reviews__avatar-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__text {
+  flex: 1;
+  padding-right: rem(80px);
+  padding-top: rem(8px);
+
+  @include tablets {
+    text-align: center;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+.reviews__title {
+  font-size: rem(30px);
+  font-weight: bold;
+  margin-bottom: rem(18px);
+  color: #323232;
+}
+
+.reviews__content {
+  margin-bottom: rem(9px);
+}
+
+.reviews__author {
+  color: #666666;
+  font-weight: bold;
+}

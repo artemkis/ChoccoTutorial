@@ -1,0 +1,26 @@
+.player-section {
+  background: #f8faf9;
+}
+
+.player-section__container {
+  max-width: rem(660px);
+  height: rem(405px); 
+  position: relative;
+  margin: 0 auto;
+
+  &:before, &:after {
+    position: absolute;
+  }
+
+  &::before {
+    content: url("./images/decor/corner-leaf.png");
+    bottom: rem(-48px);
+    left: rem(-121px);
+  }
+
+  &::after {
+    content: url("./images/decor/blured-leaf.png");
+    top: rem(-45px);
+    right: rem(-80px);
+  }
+}
