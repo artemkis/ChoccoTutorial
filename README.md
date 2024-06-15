@@ -6,10 +6,10 @@
 
 1. Cклонируйте репозиторий: 
 
-   ```git clone https://artemkis.github.io/ProjectStoreGame/```
+   ```git clone https://github.com/artemkis/ChoccoTutorial.git```
 
 2. Установите все npm пакеты:
 
    ```npm i```
 
-3. В командной строке терминала введите команду gulp и проект соберется в папку docs.
+3. В командной строке терминала введите команду npm run build и проект соберется в папку docs.
